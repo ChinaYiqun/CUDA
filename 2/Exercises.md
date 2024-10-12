@@ -14,8 +14,8 @@
 - (B) `i=blockIdx.x*threadIdx.x * 2;`
 - (C) `i=(blockIdx.x*blockDim.x + threadIdx.x) * 2;`
 - (D) `i=blockIdx.x*blockDim.x * 2 + threadIdx.x;`
-
-- 
+  
+-  [C] 详细见3_2 章节
 #### 3. 我们想让每个线程计算向量加法中的两个元素。每个线程块处理2*blockDim.x个连续的元素，形成两部分。每个块中的所有线程首先处理一部分，每个线程处理一个元素。然后它们都会移动到下一部分，每个线程处理一个元素。假设变量i应该是线程要处理的第一个元素的索引。那么将线程/块索引映射到第一个元素的数据索引的表达式是什么？
 
 - (A) `i=blockIdx.x*blockDim.x + threadIdx.x + 2;`
