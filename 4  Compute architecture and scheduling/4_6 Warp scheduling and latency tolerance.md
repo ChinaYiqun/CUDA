@@ -1,6 +1,7 @@
 ### 4.6 Warp调度与延迟容忍（Warp Scheduling and Latency Tolerance）
 
-在CUDA编程模型中，**Warp调度（Warp Scheduling）**和**延迟容忍（Latency Tolerance）**是确保线程块中的warp有效利用硬件资源的过程的关键部分。理解这些概念对于优化CUDA程序的性能至关重要。
+Ampere A100 GPU 中，SM 有 64 个内核，但可以同时分配多达 2048 个线程。因此， SM 可以分配多达 32 倍于其内核在任何给定 clock cycle 下所能支持的线程数
+
 
 #### 4.6.1 Warp调度
 
