@@ -70,3 +70,7 @@
 
 ### 内存模型 
 ![img_3.png](img_3.png)
+
+例如，Ampere A100 GPU 有 108 个 SM，每个有 64 个内核，整个 GPU 中总共有 6912 个内核。
+
+![img_4.png](img_4.png)
